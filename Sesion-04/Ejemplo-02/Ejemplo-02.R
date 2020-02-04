@@ -4,7 +4,7 @@ respuesta <- c(1:4, seq(10, 20, 2))
 
 plot(tiempo,respuesta,
      type='b', # probar con l
-     pch=15, # cambiar número
+     pch=19, # cambiar número
      col="black", 
      main = "Respuesta vs tiempo",
      ylab = "Respuesta",
@@ -32,6 +32,7 @@ spotify <- spotify %>%
   mutate(duracion = ((duration_ms/1000)/60)) #convertir el tiempo en ms a minutos.
 
 #Graficar el historial de casos para conocer en qué rango de minutos existen más registros.
-hist(spotify$duracion, col='orange', breaks=40, 
+hist(spotify$duracion, col='grey', breaks=80, 
+     xlab = "Duración de la canción",
      ylab = "Frecuencia", main = "Histograma ejemplo")
 

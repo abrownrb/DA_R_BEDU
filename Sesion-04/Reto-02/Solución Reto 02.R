@@ -30,4 +30,12 @@ plot(table(ecobici$Colonia),
      xlab = 'Colonia',
      main = "Estaciones por colonia")
 
+estaciones <- ecobici %>%
+  group_by(Colonia) %>% 
+  count() %>%
+  summarise(n = sum(n))
                  
+plot(factor(estaciones$Colonia),estaciones$n,
+     ylab = "Número de estaciones", 
+     xlab = 'Colonia',
+     main = "Estaciones por colonia")
