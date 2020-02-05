@@ -1,6 +1,6 @@
 
 #Cargamos el DS de NBA en un objeto llamado nba.
-nba <- NBA_players_by_season
+nba <- read.csv('/Users/abrownr/Desktop/BEDU/A2-Programacion-con-R/Sesion-05/NBA_players_by_season.csv')
 head(nba)
 #Filtramos el DS por nacionalidad y obtenemos los jugadores mexicanos.
 mxplayer <- nba %>% 
@@ -19,5 +19,5 @@ print(games)
 
 ggplot(games, aes(fill=Games, y=Games, x=Season.short))+
   geom_bar(position = "stack", stat = "identity")
- 
+  
 

@@ -2,7 +2,7 @@
 # Creando visualizacion de datos
 
 # Leemos el fichero .csv de cars 
-cars <- read.csv("Cars.csv")
+cars <- read.csv("/Users/abrownr/Desktop/BEDU/A2-Programacion-con-R/Sesion-05/Teoría/Cars.csv")
 
 # Cargamos el paquete ggplot2, esencial para la visualizacion
 install.packages("ggplot2")

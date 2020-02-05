@@ -1,4 +1,4 @@
-nba <- NBA_players_by_season
+nba <- read.csv('/Users/abrownr/Desktop/BEDU/A2-Programacion-con-R/Sesion-05/NBA_players_by_season.csv')
 
 print(usplayers)
 #Obtener jugadores estadounidenses y sus edades.
