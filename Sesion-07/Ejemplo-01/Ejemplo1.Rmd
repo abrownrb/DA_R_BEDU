@@ -1,0 +1,138 @@
+---
+title: "Ejemplo1"
+author: "Alicia Brown Rivero-Borrell"
+date: "2/13/2020"
+output: pdf_document
+---
+## Ejercicios practicos (storytelling); Kaggle
+
+### OBJETIVO
+- Aprender a estructurar un problema 
+
+#### REQUISITOS
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion07/Ejemplo-01`
+
+#### DESARROLLO
+
+El codigo para ver este ejercicio lo cubriremos a lo largo de la teoria. Sin embargo, aqui tenemos que investigar la informacion de la encuesta anual de ciencia de datos y machine learning de Kaggle. 
+
+El objetivo es contar la hstoria de los miembros de esta comunidad en México y en el mundo para motivar a los alumnos.
+
+Para comenzar, vamos a cargar la librería tidyverse:
+
+```{r}
+library(tidyverse)
+```
+
+Ahora, es necesario que descarguen los datos del archivo `multiple_choice_responses.csv` y `multiple_choice_responses_DICT.csv` que contienen las respuestas a las preguntas de opción múltiple y el diccionario de las variables correspondientes.
+
+Carguemos los datos al entorno:
+
+```{r}
+mc_responses <- read.csv("/Users/abrownr/Desktop/BEDU/A2-Programacion-con-R/Sesion-07/Ejemplo-01/multiple_choice_responses.csv")
+
+dic <- read.csv("/Users/abrownr/Desktop/BEDU/A2-Programacion-con-R/Sesion-07/Ejemplo-01/multiple_choice_responses_DICT.csv")
+```
+
+Como ya vimos, queremos conectar con el contexto de nuestra audiencia. Por lo que vamos a comenzar por identificar la distribución de data scientists por género: 
+
+```{r}
+ggplot(data = mc_responses, aes(x = Q2, fill = Q2)) +
+  geom_bar() +
+  scale_fill_manual(values=c("#D69CE1", "#037ffc", "#03fc98","#03fc98")) + 
+  theme(axis.text.x = element_text(angle=65, vjust=0.6),legend.position = "none") +
+  xlab('genero')+
+  ylab("numero de usuarios")
+```
+La variable Q3 contiene el país al que pertenece el encuestado. Vamos a descubrir qué tan grande es el número de científicos de datos en México comparado a los demás países.
+
+Usemos el verbo summarise de dplyr para crear un data frame con el número de usuarios por categoría de Q3 (país).
+
+```{r}
+summ <- mc_responses %>% group_by(Q3) %>% summarise(users = length(Q3)) 
+```
+
+Ordenémos los resultados de forma descendiente según el número de usuarios.
+
+```{r}
+summ <- summ[order(-summ$users),]
+```
+
+Ahora, vamos a generar una visualización efectiva para nuestra historia:
+
+```{r}
+summ %>% ggplot() +
+  geom_bar(aes(x = reorder(Q3, users), y = users, fill=reorder(Q3, users)), stat = 'identity') 
+```
+
+Son muchas barras que pueden confundir a la audiencia, intentemos con el los países del top 50:
+
+```{r}
+p <- summ[1:50,] %>% ggplot() +
+  geom_bar(aes(x = reorder(Q3, users), y = users, fill=reorder(Q3, users)), stat = 'identity') 
+p
+```
+  
+Ahora vamos a transponer la gráfica para poder 
+```{r}
+p <- p + coord_flip()
+p
+```
+
+Mucho mejor, ahora vamos a resaltar el resultado de México para obtener una visualización efectiva con respecto al contexto de nuestra audiencia.
+
+```{r}
+p <- p +
+  geom_text(aes(x = reorder(Q3, users), y = users,label=users), hjust=-0.1) +
+  annotate("text", x = 31.1, y=750, label = "<- lugar 20!") +
+  scale_fill_manual(values=c(rep('#8D8A89',30), "#208600",rep('#8D8A89',length(unique(mc_responses$Q3))-31))) + 
+  theme(axis.text.x = element_text(angle=65, vjust=0.6),legend.position = "none") +
+  xlab('top 50 paises')+
+  ylab("numero de usuarios")
+```
+La variable Q10 contiene el rango de ingreso en USD anuales que reportó el encuestado. 
+
+Vamos a explorar cuál es el salario de los científicos de datos en México, en nuestro rango de edad.
+
+Como la variable Q10 es categórica, probemos con una gráfica de waffle. Para eso es necesario instalar y cargar los siguientes paquetes.
+
+```{r}
+install.packages('waffle')
+install.packages('magrittr')
+install.packages('hrbrthemes')
+
+library(waffle)
+library(magrittr)
+library(hrbrthemes)
+```
+Ahora, empecemos por filtrar los valores nulos, los usuarios en el rango de edad '25-29' y que viven en México.
+
+```{r}
+filtered <- mc_responses %>% filter(Q1 == '25-29' & Q10 != '' & Q3 == 'Mexico')
+```
+
+Las gráficas de waffle o de retícula, son una forma muy efectiva de visualizar la proporción de miembros de una categoría dentro de una sola variable categórica.
+Por lo que primero vamos a preparr un dataframe con la suma de miembros de cada clase.
+
+```{r}
+counted <- filtered %>%
+  count(Q10)
+```
+
+Ahora sí, vamos a usar la sintaxis de ggplot para crear una gráfica de waffle:
+
+```{r}
+library(waffle)
+
+ggplot(counted, aes(fill = Q10, values = n)) +
+  geom_waffle(Q10, n_rows = 5, size = 0.33, colour = "white", flip = TRUE) +
+  coord_equal() +
+  theme_ipsum_rc(grid="") +
+  ggtitle('Composición del ingreso de los kagglers en edad 25-29 (USD anual)')+
+  theme_enhance_waffle() +
+  scale_fill_brewer(palette="Paired")
+
+```
+
+En cada ejemplo intenta identificar cómo se usan las diferentes capas y sus parámetros.

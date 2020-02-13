@@ -1,0 +1,246 @@
+response_time – Time from Start to Finish (seconds),Duration (in seconds)
+Q1,What is your age (# years)?
+Q2,What is your gender? - Selected Choice
+Q2_OTHER_TEXT,What is your gender? - Prefer to self-describe - Text
+Q3,In which country do you currently reside?
+Q4,What is the highest level of formal education that you have attained or plan to attain within the next 2 years?
+Q5,Select the title most similar to your current role (or most recent title if retired): - Selected Choice
+Q5_OTHER_TEXT,Select the title most similar to your current role (or most recent title if retired): - Other - Text
+Q6,What is the size of the company where you are employed?
+Q7,Approximately how many individuals are responsible for data science workloads at your place of business?
+Q8,Does your current employer incorporate machine learning methods into their business?
+Q9_Part_1,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Analyze and understand data to influence product or business decisions
+Q9_Part_2,"Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build and/or run the data infrastructure that my business uses for storing, analyzing, and operationalizing data"
+Q9_Part_3,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build prototypes to explore applying machine learning to new areas
+Q9_Part_4,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build and/or run a machine learning service that operationally improves my product or workflows
+Q9_Part_5,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Experimentation and iteration to improve existing ML models
+Q9_Part_6,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Do research that advances the state of the art of machine learning
+Q9_Part_7,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - None of these activities are an important part of my role at work
+Q9_Part_8,Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Other
+Q9_OTHER_TEXT,Select any activities that make up an important part of your role at work: (Select all that apply) - Other - Text
+Q10,What is your current yearly compensation (approximate $USD)?
+Q11,Approximately how much money have you spent on machine learning and/or cloud computing products at your work in the past 5 years?
+Q12_Part_1,Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Twitter (data science influencers)
+Q12_Part_2,Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Hacker News (https://news.ycombinator.com/)
+Q12_Part_3,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Reddit (r/machinelearning, r/datascience, etc)"
+Q12_Part_4,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Kaggle (forums, blog, social media, etc)"
+Q12_Part_5,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Course Forums (forums.fast.ai, etc)"
+Q12_Part_6,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - YouTube (Cloud AI Adventures, Siraj Raval, etc)"
+Q12_Part_7,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Podcasts (Chai Time Data Science, Linear Digressions, etc)"
+Q12_Part_8,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Blogs (Towards Data Science, Medium, Analytics Vidhya, KDnuggets etc)"
+Q12_Part_9,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Journal Publications (traditional publications, preprint journals, etc)"
+Q12_Part_10,"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Slack Communities (ods.ai, kagglenoobs, etc)"
+Q12_Part_11,Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - None
+Q12_Part_12,Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Other
+Q12_OTHER_TEXT,Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Other - Text
+Q13_Part_1,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udacity
+Q13_Part_2,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Coursera
+Q13_Part_3,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - edX
+Q13_Part_4,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - DataCamp
+Q13_Part_5,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - DataQuest
+Q13_Part_6,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Kaggle Courses (i.e. Kaggle Learn)
+Q13_Part_7,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Fast.ai
+Q13_Part_8,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udemy
+Q13_Part_9,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - LinkedIn Learning
+Q13_Part_10,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - University Courses (resulting in a university degree)
+Q13_Part_11,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - None
+Q13_Part_12,On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Other
+Q13_OTHER_TEXT,On which platforms have you begun or completed data science courses? (Select all that apply) - Other - Text
+Q14,What is the primary tool that you use at work or school to analyze data? (Include text response) - Selected Choice
+Q14_Part_1_TEXT,"What is the primary tool that you use at work or school to analyze data? (Include text response) - Basic statistical software (Microsoft Excel, Google Sheets, etc.) - Text"
+Q14_Part_2_TEXT,"What is the primary tool that you use at work or school to analyze data? (Include text response) - Advanced statistical software (SPSS, SAS, etc.) - Text"
+Q14_Part_3_TEXT,"What is the primary tool that you use at work or school to analyze data? (Include text response) - Business intelligence software (Salesforce, Tableau, Spotfire, etc.) - Text"
+Q14_Part_4_TEXT,"What is the primary tool that you use at work or school to analyze data? (Include text response) - Local development environments (RStudio, JupyterLab, etc.) - Text"
+Q14_Part_5_TEXT,"What is the primary tool that you use at work or school to analyze data? (Include text response) - Cloud-based data software & APIs (AWS, GCP, Azure, etc.) - Text"
+Q14_OTHER_TEXT,What is the primary tool that you use at work or school to analyze data? (Include text response) - Other - Text
+Q15,How long have you been writing code to analyze data (at work or at school)?
+Q16_Part_1,"Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Jupyter (JupyterLab, Jupyter Notebooks, etc) "
+Q16_Part_2,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  RStudio 
+Q16_Part_3,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  PyCharm 
+Q16_Part_4,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Atom 
+Q16_Part_5,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  MATLAB 
+Q16_Part_6,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Visual Studio / Visual Studio Code 
+Q16_Part_7,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Spyder  
+Q16_Part_8,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Vim / Emacs  
+Q16_Part_9,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Notepad++  
+Q16_Part_10,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Sublime Text  
+Q16_Part_11,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q16_Part_12,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q16_OTHER_TEXT,Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Other - Text
+Q17_Part_1,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Kaggle Notebooks (Kernels) 
+Q17_Part_2,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Google Colab 
+Q17_Part_3,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Microsoft Azure Notebooks 
+Q17_Part_4,"Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Google Cloud Notebook Products (AI Platform, Datalab, etc) "
+Q17_Part_5,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Paperspace / Gradient 
+Q17_Part_6,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  FloydHub 
+Q17_Part_7,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Binder / JupyterHub 
+Q17_Part_8,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  IBM Watson Studio 
+Q17_Part_9,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Code Ocean 
+Q17_Part_10,"Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - AWS Notebook Products (EMR Notebooks, Sagemaker Notebooks, etc) "
+Q17_Part_11,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q17_Part_12,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q17_OTHER_TEXT,Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Other - Text
+Q18_Part_1,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Python
+Q18_Part_2,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - R
+Q18_Part_3,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - SQL
+Q18_Part_4,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C
+Q18_Part_5,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C++
+Q18_Part_6,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Java
+Q18_Part_7,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Javascript
+Q18_Part_8,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - TypeScript
+Q18_Part_9,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Bash
+Q18_Part_10,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - MATLAB
+Q18_Part_11,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q18_Part_12,What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q18_OTHER_TEXT,What programming languages do you use on a regular basis? (Select all that apply) - Other - Text
+Q19,What programming language would you recommend an aspiring data scientist to learn first? - Selected Choice
+Q19_OTHER_TEXT,What programming language would you recommend an aspiring data scientist to learn first? - Other - Text
+Q20_Part_1,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Ggplot / ggplot2 
+Q20_Part_2,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Matplotlib 
+Q20_Part_3,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Altair 
+Q20_Part_4,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Shiny 
+Q20_Part_5,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  D3.js 
+Q20_Part_6,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Plotly / Plotly Express 
+Q20_Part_7,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Bokeh 
+Q20_Part_8,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Seaborn 
+Q20_Part_9,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Geoplotlib 
+Q20_Part_10,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Leaflet / Folium 
+Q20_Part_11,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q20_Part_12,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q20_OTHER_TEXT,What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Other - Text
+Q21_Part_1,Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - CPUs
+Q21_Part_2,Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - GPUs
+Q21_Part_3,Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - TPUs
+Q21_Part_4,Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - None / I do not know
+Q21_Part_5,Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q21_OTHER_TEXT,Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Other - Text
+Q22,Have you ever used a TPU (tensor processing unit)?
+Q23,For how many years have you used machine learning methods?
+Q24_Part_1,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Linear or Logistic Regression
+Q24_Part_2,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Decision Trees or Random Forests
+Q24_Part_3,"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Gradient Boosting Machines (xgboost, lightgbm, etc)"
+Q24_Part_4,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Bayesian Approaches
+Q24_Part_5,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Evolutionary Approaches
+Q24_Part_6,"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Dense Neural Networks (MLPs, etc)"
+Q24_Part_7,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Convolutional Neural Networks
+Q24_Part_8,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Generative Adversarial Networks
+Q24_Part_9,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Recurrent Neural Networks
+Q24_Part_10,"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Transformer Networks (BERT, gpt-2, etc)"
+Q24_Part_11,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - None
+Q24_Part_12,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Other
+Q24_OTHER_TEXT,Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Other - Text
+Q25_Part_1,"Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Automated data augmentation (e.g. imgaug, albumentations)"
+Q25_Part_2,"Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Automated feature engineering/selection (e.g. tpot, boruta_py)"
+Q25_Part_3,"Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Automated model selection (e.g. auto-sklearn, xcessiv)"
+Q25_Part_4,"Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Automated model architecture searches (e.g. darts, enas)"
+Q25_Part_5,"Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Automated hyperparameter tuning (e.g. hyperopt, ray.tune)"
+Q25_Part_6,"Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Automation of full ML pipelines (e.g. Google AutoML, H20 Driverless AI)"
+Q25_Part_7,Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q25_Part_8,Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q25_OTHER_TEXT,Which categories of ML tools do you use on a regular basis?  (Select all that apply) - Other - Text
+Q26_Part_1,"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - General purpose image/video tools (PIL, cv2, skimage, etc)"
+Q26_Part_2,"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image segmentation methods (U-Net, Mask R-CNN, etc)"
+Q26_Part_3,"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Object detection methods (YOLOv3, RetinaNet, etc)"
+Q26_Part_4,"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image classification and other general purpose networks (VGG, Inception, ResNet, ResNeXt, NASNet, EfficientNet, etc)"
+Q26_Part_5,"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Generative Networks (GAN, VAE, etc)"
+Q26_Part_6,Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q26_Part_7,Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q26_OTHER_TEXT,Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Other - Text
+Q27_Part_1,"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Word embeddings/vectors (GLoVe, fastText, word2vec)"
+Q27_Part_2,"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Encoder-decorder models (seq2seq, vanilla transformers)"
+Q27_Part_3,"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Contextualized embeddings (ELMo, CoVe)"
+Q27_Part_4,"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Transformer language models (GPT-2, BERT, XLnet, etc)"
+Q27_Part_5,Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q27_Part_6,Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q27_OTHER_TEXT,Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Other - Text
+Q28_Part_1,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   Scikit-learn 
+Q28_Part_2,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   TensorFlow 
+Q28_Part_3,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Keras 
+Q28_Part_4,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  RandomForest
+Q28_Part_5,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Xgboost 
+Q28_Part_6,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  PyTorch 
+Q28_Part_7,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Caret 
+Q28_Part_8,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  LightGBM 
+Q28_Part_9,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Spark MLib 
+Q28_Part_10,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Fast.ai 
+Q28_Part_11,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q28_Part_12,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q28_OTHER_TEXT,Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Other - Text
+Q29_Part_1,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Platform (GCP) 
+Q29_Part_2,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Amazon Web Services (AWS) 
+Q29_Part_3,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Microsoft Azure 
+Q29_Part_4,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  IBM Cloud 
+Q29_Part_5,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Alibaba Cloud 
+Q29_Part_6,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Salesforce Cloud 
+Q29_Part_7,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Oracle Cloud 
+Q29_Part_8,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  SAP Cloud 
+Q29_Part_9,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  VMware Cloud 
+Q29_Part_10,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Red Hat Cloud 
+Q29_Part_11,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q29_Part_12,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q29_OTHER_TEXT,Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Other - Text
+Q30_Part_1,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Elastic Compute Cloud (EC2)
+Q30_Part_2,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Compute Engine (GCE)
+Q30_Part_3,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Lambda
+Q30_Part_4,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Azure Virtual Machines
+Q30_Part_5,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Google App Engine
+Q30_Part_6,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Functions
+Q30_Part_7,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Elastic Beanstalk
+Q30_Part_8,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Kubernetes Engine
+Q30_Part_9,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Batch
+Q30_Part_10,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Azure Container Service
+Q30_Part_11,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q30_Part_12,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q30_OTHER_TEXT,Which specific cloud computing products do you use on a regular basis? (Select all that apply) - Other - Text
+Q31_Part_1,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Google BigQuery
+Q31_Part_2,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Redshift
+Q31_Part_3,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Databricks
+Q31_Part_4,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Elastic MapReduce
+Q31_Part_5,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Teradata
+Q31_Part_6,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Analysis Services
+Q31_Part_7,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Dataflow
+Q31_Part_8,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Athena
+Q31_Part_9,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Kinesis
+Q31_Part_10,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Pub/Sub
+Q31_Part_11,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q31_Part_12,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q31_OTHER_TEXT,Which specific big data / analytics products do you use on a regular basis? (Select all that apply) - Other - Text
+Q32_Part_1,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - SAS
+Q32_Part_2,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Cloudera
+Q32_Part_3,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Azure Machine Learning Studio
+Q32_Part_4,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Machine Learning Engine
+Q32_Part_5,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Vision
+Q32_Part_6,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Speech-to-Text
+Q32_Part_7,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Natural Language
+Q32_Part_8,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - RapidMiner
+Q32_Part_9,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Translation
+Q32_Part_10,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon SageMaker
+Q32_Part_11,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q32_Part_12,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q32_OTHER_TEXT,Which of the following machine learning products do you use on a regular basis? (Select all that apply) - Other - Text
+Q33_Part_1,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Google AutoML 
+Q33_Part_2,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  H20 Driverless AI  
+Q33_Part_3,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Databricks AutoML 
+Q33_Part_4,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  DataRobot AutoML 
+Q33_Part_5,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Tpot 
+Q33_Part_6,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Auto-Keras 
+Q33_Part_7,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Auto-Sklearn 
+Q33_Part_8,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Auto_ml 
+Q33_Part_9,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Xcessiv 
+Q33_Part_10,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   MLbox 
+Q33_Part_11,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice - None
+Q33_Part_12,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other
+Q33_OTHER_TEXT,Which automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Other - Text
+Q34_Part_1,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - MySQL
+Q34_Part_2,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - PostgresSQL
+Q34_Part_3,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - SQLite
+Q34_Part_4,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft SQL Server
+Q34_Part_5,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - Oracle Database
+Q34_Part_6,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Access
+Q34_Part_7,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS Relational Database Service
+Q34_Part_8,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - AWS DynamoDB
+Q34_Part_9,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - Azure SQL Database
+Q34_Part_10,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud SQL
+Q34_Part_11,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - None
+Q34_Part_12,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Selected Choice - Other
+Q34_OTHER_TEXT,Which of the following relational database products do you use on a regular basis? (Select all that apply) - Other - Text
