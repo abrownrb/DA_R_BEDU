@@ -1,17 +1,26 @@
-`Data Science` > [`Programacion con R`]
-## Programacion orientada a objetos  
+ [`Estadística con R`](../Readme.md) > `Sesión 01: Fundamentos de R` 
+
+## Vectores
 
 ### OBJETIVO
-- Importación de un dataset
-- Cambiar los valores de un objeto
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Reto-01`
+Al final de el `Reto-01` serás capaz de:
+- Crear vectors utilizando diferentes funciones
+- Identificar características de los vectores
+- Operar con vectores
 
-#### DESARROLLO
-Importamos el dataset de **Spotify**, desplegaremos su estructura e identifiaremos la variable del tiempo que se encuentra en **ms** , se realizaran las operaciones necesarias para convertir el valor a **minutos**
+### REQUISITOS
 
-[Solución](solucion)
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
 
+### INSTRUCCIONES DEL RETO
 
+- Crea un vector con los números del 1 al 500, de 10 en 10.
+- Guarda este vector con el nombre mi.vector
+- ¿Cuál es el tamaño del vector?
+- Al último elemento del vector, reemplazalo por el número -1.
+- Multiplica este vector por 0.85 y sumale 10, guarda el resultado en mi.vector.transformado
+- Ordena el vector mi.vector.transformado descendentemente

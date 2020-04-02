@@ -1,17 +1,29 @@
-`Data Science` > [`Programacion con R`]
-## Programacion orientada a objetos  
+  [`Estadística con R`](../Readme.md) > `Sesión 01: Fundamentos de R` 
+
+## Vectores
 
 ### OBJETIVO
-- Usar el package dplyr para optimizar codigo 
-- Importar un fichero de una ruta con la funcion read_excel
-- Evaluar las variables que contiene la tabla y filtrarlas con la funcion select
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Reto-02`
+Al final de el `Reto-02` serás capaz de:
+- Ver las características de un dataframe
+- Accesar a los elementos de un dataframe
+- Agregar datos a un dataframe
+- Transformar una columna 
+- Eliminar columnas de un dataframe
 
-#### DESARROLLO
-Importamos la tabla de Ecobici con la que hemos estado trabajando (hint: read_excel). A nuestra tabla la llamaremos "ecobici".
-Observaremos la calidad de los datos importados y seleccionaremos las variables mas importantes para el analisis (hint: select). 
+### REQUISITOS
 
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
 
+### INSTRUCCIONES DEL RETO
+
+- Imprime el dataframe precargado en R **mtcars**
+- Imprime el numero de renglones y columnas del dataframe
+- Imprime el nombre de las columnas del dataframe
+- Imprime el dato que esta en la tercer columna, quinto renglon del dataframe
+- Imprime todos los renglones de la cuarta y quinta columna
+- Imprime los primeros 20 renglones de la cuarta y quinta columna
+- Elimina la segunda columna del dataframe

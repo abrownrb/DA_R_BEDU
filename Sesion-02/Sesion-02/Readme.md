@@ -1,16 +1,31 @@
-`Data Analysis` > `A2-Programación-con-R`
+[`Estadística con R`](../Readme.md) > `Sesión 01: Fundamentos de R`
 
-## Programación orientada a objetos
+## Fundamentos de R II
 
 ### OBJETIVOS 
- - Identificar la tipología de objetos existentes.
- - Crear tablas y resolver operaciones con objetos, para estructurar bases de datos, entender sus componentes y operar los elementos que la integran. 
+- Aprender a declarar y acceder a vectores
+- Aprender a declarar y manipular dataframes
+- Leer datos desde diferentes fuentes
+- Utilizar funciones de R
 
 #### ORGANIZACION DE LA CLASE 
 
-- Importar un fichero de datos
+- Vectores
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
-- Dplyr
-	- [Ejemplo 02](Ejemplo-02)
-	- [Reto 02](Reto-02)
+
+- DataFrames
+	- [Ejemplo 02](Ejemplo-01)
+	- [Reto 02](Reto-01)
+
+- Funciones útiles para DataFrames
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
+
+- Lectura de Datos
+	- [Ejemplo 04](Ejemplo-04)
+	- [Reto 04](Reto-04)
+	
+### POSTWORK: Elección del dataset
+- Postwork 
+	- [Postwork](Postwork)
