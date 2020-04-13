@@ -1,22 +1,17 @@
 `Data Science` > [`Programacion con R`]
-## Funciones, condiciones y loops
+## Programacion orientada a objetos  
 
 ### OBJETIVO
-- Usar la funcion for para crear un loop que nos llevara el resultado segun la condicion por la cual estemos filtrando la informacion
+- Usar el package dplyr para optimizar codigo 
+- Importar un fichero de una ruta con la funcion read_excel
+- Evaluar las variables que contiene la tabla y filtrarlas con la funcion select
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Reto-02`
+1. Usar la carpeta de trabajo `Sesion02/Reto-02`
 
 #### DESARROLLO
-### Utilizando el Dataset de airquality.
+Importamos la tabla de Ecobici con la que hemos estado trabajando (hint: read_excel). A nuestra tabla la llamaremos "ecobici".
+Observaremos la calidad de los datos importados y seleccionaremos las variables mas importantes para el analisis (hint: select). 
 
-- Investigar el detalle de cada columna del DataSet.
 
-- Utilizando ciclo For y la sentencia IF/ELSE; 
-    * Contar cuantos días el promedio de velocidad del aire es: Mayor a 7, Menor a 4 y 
-      cuántos registros existen dentro de ese rango(4-7). 
-    
-- Calcular el promedio total de la Columna Temp.
-
-  
