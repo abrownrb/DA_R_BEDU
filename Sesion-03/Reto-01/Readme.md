@@ -1,17 +1,17 @@
 `Data Science` > [`Programacion con R`]
-## Funciones, condiciones y loops
+## Programacion orientada a objetos  
 
 ### OBJETIVO
-- Crear funciones que reciban parametros.
-- Crear nuevas variables 
-- Usar la funcion ifelse para crear una variable condicionada al valor de otra 
+- Importación de un dataset
+- Cambiar los valores de un objeto
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Reto-01`
+1. Usar la carpeta de trabajo `Sesion02/Reto-01`
 
 #### DESARROLLO
+Importamos el dataset de **Spotify**, desplegaremos su estructura e identifiaremos la variable del tiempo que se encuentra en **ms** , se realizaran las operaciones necesarias para convertir el valor a **minutos**
 
- Crear una función que reciba un array de numeros positivos y utilizando if/else 
- determine cual es el valor mayor en el array
+[Solución](solucion)
+
 
