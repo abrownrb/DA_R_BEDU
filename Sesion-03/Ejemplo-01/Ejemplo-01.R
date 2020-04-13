@@ -1,24 +1,30 @@
-#Condición simple.
+#El comando STR deplegara la estructura de nuestro data set
 
-variable <- 8
-if (variable > 40){
-print("La variable es superior a 40")
-} else {
-print ("La variable no es superior a 40")
-}
+str(mtcars)
 
-ifelse(variable>40, "La variable es superior a 40", "La variable no es superior a 40")
+#Para identificar el tipo de dato de un objeto, utilizaremos class
 
-#Condición con OR o AND
+class(mtcars$vs)
 
-A <- 8
-B <- 17
-C <- 10
-D <- 10
-if (A > B || C == D){ # probar con AND (&)
-print("TRUE")
-} else {
-print ("FALSE")
-}
+#Cambiaremos el tipo de dato integer a logical 
 
-ifelse(A > B || C == D, "TRUE", "FALSE")
+mtcars$vs = as.logical(mtcars$vs)
+mtcars$am = as.logical(mtcars$am)
+
+#Validaremos los cambios de tipo de dato
+
+class(mtcars$vs)
+class(mtcars$am)
+
+summary(mtcars)
+
+#Transformación de valores
+
+wt <- (mtcars$wt*1000/2.204623)
+wt
+
+##Transformación del dataset
+
+mtcars.new <- transform(mtcars, wt = wt * 1000 / 2.204623)
+
+summary(mtcars)
