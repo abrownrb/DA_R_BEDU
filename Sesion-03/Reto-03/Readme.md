@@ -1,12 +1,14 @@
 `Data Science` > [`Programacion con R`]
-## Funciones, condiciones y loops
+## Dplyr
 
 ### OBJETIVO
-- Usar la funcion unique para crear un obtener los resultados unicos segun la condicion por la cual estemos filtrando la informacion
+- Usar el package dplyr para optimizar codigo 
+- Hacer un recuento de una variable (funcion count) y ordenar por orden alfabetico (funcion arrange)
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Reto-03`
+1. Usar la carpeta de trabajo `Sesion02/Reto-03`
 
 #### DESARROLLO
-Seguimos trabajando con la base de ecobici. Ahora queremos comprobar la consistencia entre nombres de Colonias y Codigos Postales. Para ello, usaremos la funcion unique, y llevaremos todos los posibles Codigos Postales de aquellas colonias que se llamen "Roma Norte".
+
+Sobre la tabla de ecobici que ya estamos trabajando, crearemos un comando optimizado de varias ordenes apoyandote de la funcion %>%. La primera orden sera un recuento de las estaciones que hay en cada colonia (hint: count). A continuacion pediremos que se ordenen alfabeticamente por nombre de la Colonia. 
