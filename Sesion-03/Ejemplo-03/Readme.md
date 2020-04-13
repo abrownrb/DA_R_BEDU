@@ -1,54 +1,29 @@
 `Data Science` > [`Programacion con R`]
-## Funciones, condiciones y loops
+## Dplyr en un solo comando
 
 ### OBJETIVO
-- Aprender a hacer un loop con WHILE 
+- Aprenderas a usar dplyr
+- Aprenderas a crear una orden compleja en un solo comando de codigo
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Ejemplo-03`
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-03`
 
 #### DESARROLLO
-
-#Sintaxis basica de bucle.
+Con la ayuda del package dplyr, haremos los siguientes comandos con una sola orden (Hint: usar "%>%")
 ```{r}
-while (test_expression) {
-   statement
-}
+library(dplyr)
 ```
 
-
-#Creemos una lista de precios que asociaremos a nuestros productos. Iniciaremos por un valor de 20MXN y crearemos una #funcion para que incrementen en 5MXN hasta llegar a un precio de 2500MXN. 
-
+Usa la base de datos precargada llamada iris y calcula la media de la sepal.length y la sepal.width segun la especie.
+Finalmente, ordena los resultas alfabeticamente segun la especie. 
 ```{r}
-precio <- 20
-
-while(precio <= 2500){
-  print(precio)
-  precio <- precio + 5 
-}
-
+head(iris)
+library
+iris <- iris # Guardo la tabla en la memoria de objetos
+iris %>% # Datos que usare
+  group_by(Species) %>% # Variable de agrupacion
+  summarise(Media_Sepal_Length = mean(Sepal.Length), # Media de sepal length
+            Media_Sepal_Width = mean(Sepal.Width)) %>% # Media de sepal width
+  arrange(Species) # Ordenar por especies (por defecto es orden ascendiente)
 ```
-
-
-# Iterar un array de cadenas.
-```{r}
-v <- c("Hello","while loop")
-cnt <- 2
-
-while (cnt < 7) {
-   print(v)
-   cnt = cnt + 1
-}
-```
-
-# Estructura de control dentro de ciclo While.
-```{r}
-x <- 0
-while(x < 5){
-  x <- x+1;
-  if (x == 3)
-    next; 
-  print(x);
-  }
-  ```
