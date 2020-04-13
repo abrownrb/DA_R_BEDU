@@ -1,45 +1,41 @@
 `Data Science` > [`Programacion con R`]
-## Funciones, condiciones y loops
+## Dplyr
 
 ### OBJETIVO
-- Aprender a hacer un loop con FOR 
+- Aprenderas a cargar un package
+- Aprenderas a usar dplyr
+- Aprenderas a seleccionar y filtrar informacion 
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion03/Ejemplo-02`
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
 
 #### DESARROLLO
 
-# Recorre una secuencia desde hasta 10 de uno en uno
+
+Cargamos el paquete que nos permitira hacer el ejercicio   
 ```{r}
-for (i in 1:10) {
-  print (i)
-}
+library(dplyr)
 ```
 
-#Recorre los valores contenidos en el vector
-```{r}
-for (n in c(2,5,10,20,50)) {
-print(n)
-}
-```
-
-#Recorre los valores contenidos en el vector de Strings.
-```{r}
-arrayString <- c("Loops.","ForLoop","WhileLoop","DoWhileLoop","WhileLoop")
-for (n in arrayString) {
-print(n)
-}
-```
-
-
-Vamos a crear una un funcion para obtener los primeros cien nombres de carros (variable) de mtcars (base de la informacion)
-
+Vamos a usar la informacion de mtcars, ya disponible en R 
 ```{r}
 head(mtcars)
-mtcars <- mtcars 
-for(i in 1:100) {print(mtcars$`nombre carro`[i])}
-
 ```
 
-Primero tenemos que nombrar nuestra base para que quede guardada y operar sobre ella 
+Creamos la variable mtcars para poder hacer operaciones sobre esos datos 
+```{r}
+mtcars <- mtcars 
+```
+
+Selecciona las variables nombre del carro, millas por galon y horse power 
+```{r}
+select(mtcars, 'nombre carro', mpg, hp) 
+```
+Usamos las comillas para que detecte que es una palabra compuesta 
+
+
+Filtra por aquellos vehiculos que tengan hp mayor a 200 y su nombre contenga la letra "a" 
+```{r}
+filter(mtcars, grepl("a", 'nombre carro') & hp > 200 )
+```
