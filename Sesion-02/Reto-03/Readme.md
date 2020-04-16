@@ -1,14 +1,31 @@
-`Data Science` > [`Programacion con R`]
-## Dplyr
+  [`Estadística con R`](../Readme.md) > `Sesión 01: Fundamentos de R` 
+
+## Vectores
 
 ### OBJETIVO
-- Usar el package dplyr para optimizar codigo 
-- Hacer un recuento de una variable (funcion count) y ordenar por orden alfabetico (funcion arrange)
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion02/Reto-03`
+Al final de el `Reto-03` serás capaz de:
+- Encontrar máximos y minimos de una columna
+- Encontrar valores únicos por columna
+- Seleccionar renglones que cumplan condiciones
 
-#### DESARROLLO
+### REQUISITOS
 
-Sobre la tabla de ecobici que ya estamos trabajando, crearemos un comando optimizado de varias ordenes apoyandote de la funcion %>%. La primera orden sera un recuento de las estaciones que hay en cada colonia (hint: count). A continuacion pediremos que se ordenen alfabeticamente por nombre de la Colonia. 
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
+
+### INSTRUCCIONES DEL RETO
+
+- Imprime el dataframe precargado en R **mtcars**
+- Pide ayuda para ver la descripción del dataframe. Hint: usa `?` 
+- Responde: ¿Cuál es el máximo de la columna cyl?
+- Responde: ¿Cuál es el mínimo de la columan qsec?
+- Guarda el promedio de la columna cyl en mean.cyl
+- Guarda el promedio de la columna qsec en mean.qsec
+- Selecciona los renglones que tengan cyl mayor al promedio (mean.cyl)
+- Selecciona los rengloens que tengan cyl mayor al promedio (mean.cyl) y qsec mayor al promedio (mean.qsec)
+- Guarda la última instruccion en un dataframe que tenga el nombre mtcars.filtrados
+
+
