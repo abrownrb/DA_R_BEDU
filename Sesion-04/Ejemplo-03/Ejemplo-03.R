@@ -1,34 +1,49 @@
+install.packages('titanic')
 
-datos <- iris
-head(iris)
-## Visualización comparativa
-plot(datos[,-5], main="Gráfica de todos contra todos")
+library(dplyr)
+library(titanic)
+names(titanic_train)
 
-# Scatterplot
-datos %>% 
-  ggplot(aes(Sepal.Length, Sepal.Width))+
-  geom_point()+
-  theme(legend.position = "none")
+str(titanic_train)
+head(titanic_train)
+nrow(titanic_train)
+ncol(titanic_train)
 
-datos %>% 
-  ggplot(aes(Sepal.Length, Sepal.Width))+
-  geom_point(aes(col = Species))+
-  theme(legend.position = "none")
+# Transformamos en factor
+titanic_train$Survived <- factor(titanic_train$Survived)
+# Transforamamos al castellano
 
-## Histogramas
-hist(datos$Sepal.Length,
-     main="Histograma de Longitud de sépalo por especie", xlab="Longitud de sépalo")
-qplot(Sepal.Length, data=datos, geom='histogram', main="Histograma de Longitud de sépalo",
-      xlab="Longitud de sépalo", ylab = 'Frecuencia')
-qplot(Sepal.Length, data=datos, geom='histogram', fill=Species,
-      main="Histograma de Longitud de sépalo por especie", xlab="Longitud de sépalo")
+#Supervivencia: ¿Cuál fue el número de sobrevivientes?
+sobrev <- titanic_train %>%
+  group_by(Survived) %>%
+  count()
+
+print(sobrev)
 
 
-## Boxplot
-irisVer <- subset(datos, Species == "versicolor")
-irisSet <- subset(datos, Species == "setosa")
-irisVir <- subset(datos, Species == "virginica")
-par(mfrow=c(1,3))
-boxplot(irisVer[,-5], main="Versicolor",ylim = c(0,8),las=2)
-boxplot(irisSet[,-5], main="Setosa",ylim = c(0,8),las=2)
-boxplot(irisVir[,-5], main="Virginica",ylim = c(0,8),las=2)
+#  Clase: ¿Cuál fue la cantidad de pasajeros en cada clase?
+
+clases <- titanic_train %>%
+  group_by(titanic_train$Pclass) %>%
+  count()
+
+print(clases)
+
+
+
+#Sexo: ¿Cuántos hombres y mujeres a bordo?
+sex <- titanic_train %>% 
+  group_by(titanic_train$Sex) %>% 
+  count()
+
+print(sex)
+
+#Edad: ¿Cuál era el promedio de edades de los pasajeros?
+
+
+mean(titanic_train$Age, na.rm = TRUE) #el segundo argumento en funcion mean elimina valores nulos del dataframe.
+
+
+
+
+

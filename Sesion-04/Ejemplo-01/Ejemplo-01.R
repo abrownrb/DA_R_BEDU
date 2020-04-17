@@ -1,78 +1,30 @@
-# Librerías necesarias
-require(tidyverse) # Exploración de datos
-require(dplyr) # Manejo de bases de datos
-require(ggplot2) # Visualización de datos
-require(GGally) # Gráfica de correlación
-require(DataExplorer) # Reportes EDA
-library(data.table)
-library(readxl)
+#Graficos de base.
+tiempo <- c(1:10)
+respuesta <- c(1:4, seq(10, 20, 2))  
 
-# Leer el fichero titanic.csv como un dataframe
-setwd("/Users/abrownr/Desktop/BEDU/A2-Programacion-con-R/Sesion-04/Teoría/")
-csv <- read.csv("titanic.csv", header=TRUE, stringsAsFactors = FALSE)
-df <- as.data.frame(csv)
+plot(tiempo,respuesta,
+     type='b',
+     pch=19,
+     col="black",
+     main = "Respuesta vs tiempo",
+     ylab = "Respuesta",
+     xlab = "Tiempo")
 
-names(df)
 
-head(df)
-nrow(df)
-ncol(df)
+#Ejemplo de histograma con dataset de Spotify.
+setwd("/Users/aliciabrown/Documents/BEDU/A2-Programacion-con-R-master/Sesion-03")
+spotify <- read.csv("Reto-01/spotify.csv", header=TRUE)
+head(spotify) #Conocer como está estructurado el dataset
+str(spotify)  #Conocer a detalle los datos de cada columna  
+nrow(spotify) #Conocer el número de observaciones.
+ncol(spotify) #Conocer el número de columnas.
+mean(spotify$duration_ms) #Conocer la media de duración de las canciones en ms.
+median(spotify$acousticness)#Conocer la mediana de acústica.
 
-str(df)
-# Transformamos en factor
-df$Survived <- factor(df$Survived)
- 
-df <- df %>% 
-  mutate(Survived = factor(Survived))
+duracion <- ((spotify$duration_ms/1000)/60) #convertir el tiempo en ms a minutos.
 
-summary(df)
-
-# Completar los missing values del atributo Age con la mediana del resto de datos de esa variable pero 
-# agrupado de acuerdo a las variables Pclass y Title 
-sum(is.na(df)) 
-
-sum(is.na(df$Age)) ## 177 NAs 
-df$Age[is.na(df$Age)] <- median(df$Age, na.rm = TRUE)
-# df$Age[c(1,2),] <- 
-head(df)
-
-# Despues de realizar las operaciones anteriores, eliminar ahora cualquier fila que tenga al menos un NA.
-df <- na.omit(df)
-sum(is.na(df))
-
-unique(df$Cabin)
-
-cabin <- df %>% filter(Cabin =='')
-cabin_si <- df %>% filter(Cabin !='')
-table(cabin$Pclass)
-table(cabin_si$Pclass)
-
-head(cabin)
-summary(cabin)
-
-#Supervivencia: ¿Cuál fue el número de sobrevivientes?
-sobrev <- df %>%
-        group_by(Survived) %>%
-        count()
-print(sobrev)
-
-obj <- table(df$Survived)
-df$Survived %>% table() 
-
-sobrev
-
-# Calcular el porcentaje de pasajeros que sobrevivio
-df <- df %>%
-  mutate(Survived = as.numeric(Survived)) %>%
-  mutate(Survived = ifelse(Survived==1, 0, 1))
-
-perc <- sum(df$Survived)/length(df$Survived)*100
-perc
-
-# Calcular la probabilidad de supervivencia en base al genero (sex).
-surperc <- prop.table(table(df$Sex, df$Survived), 1)
-surperc
-
-# ¿Cuántos hombres y mujeres a bordo?
-# ¿Cuál era el promedio de edades de los pasajeros?
-# ¿Cuál era el promedio de edades de los pasajeros por sexo?
+#Graficar el historial de casos para conocer en qué rango de minutos existen más registros.
+set.seed(123)
+ejemplo <- rnorm(n = 10000, mean = 0, sd = 1)
+hist(duracion, col='orange', breaks=40, 
+     ylab = "Frecuencia", main = "Histograma ejemplo")
