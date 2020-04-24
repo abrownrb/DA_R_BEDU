@@ -1,17 +1,24 @@
-`Data Science` > [`Programacion con R`]
-## Visualizacion, graficos y tablas
+ [`Estadística con R`](../Readme.md) > `Sesión 02: Manipulación de Datos` 
+
+## Estructura de dataframe
 
 ### OBJETIVO
-- Crear un grafico de densidad
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion05/Reto-02`
+Al final de el `Reto-02` serás capaz de:
+- Leer un dataframe
+- Identificar el tipo de cada columna
 
-#### DESARROLLO
+### REQUISITOS
 
--Obtener jugadores estadounidenses y sus edades.
--Imprimir el conteo de las edades.
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
 
+### INSTRUCCIONES DEL RETO
 
- 
+- Lee el archivo `Metro_Interstate_Traffic_Volume.csv`
+- Ve la estructura del dataframe
+- ¿Cuáles son los niveles de la columna weather_main?
+- Reordena los niveles alfabéticamente
+- Agrega una columna llamada weather_main_ordered al dataframe, donde los niveles estén ordenados

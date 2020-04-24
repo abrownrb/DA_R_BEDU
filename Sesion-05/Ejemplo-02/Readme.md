@@ -1,50 +1,54 @@
-`Data Science` > [`Programacion con R`]
-## Visualizacion, graficos y tablas
+[`Estadística con R`](../Readme.md) > `Sesión 02: Manipulación de Datos`
+
+## Columnas tipo factor en un dataframe
 
 ### OBJETIVO
-- Aprender a crear un grafico de composición. 
 
-#### REQUISITOS
-1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion05/Ejemplo-02`
+Al final de el `Ejemplo-02` serás capaz de:
+- Identificar las columnas que son tipo factor
+- Ordenar las columnas tipo factor
 
-#### DESARROLLO
+### REQUISITOS
 
-Importamos la base de datos de NBA
-Importaremos la libreria ggplot2
-Crearemos un grafico de composición para mostrar las nacionalidades que tengan más de 50 jugadores en la NBA.
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
+5. Completar el `Ejemplo-01`
+6. Completar el `Reto-01`  
 
-```{r}
-#Cargamos el DS de NBA en un objeto llamado nba.
-nba <- NBA_players_by_season
-head(nba)
-#Obtener la cantidad de jugadores por nacionalidad.
-naciones <- nba %>%
-  group_by(Nationality) %>%
-  summarize(count=n())
-print(naciones)
+### TEORÍA
 
-#Eliminar estados unidos y nulos
-naciones <- naciones[-c(1),]
-naciones <- naciones[-c(68),]
-#Filtrar nacionalidades con menos de 10 jugadores.
-naciones <- naciones %>% 
-  filter(count > 50)
-#Obtener la suma total de los jugadores.
-totalPlayers <- sum(naciones$count)
-print(totalPlayers)
+Al utilizar la función `str()` para ver la estructura de nuestro dataframe, podemos ver el tipo de columna que es, según el tipo de dato que alberga. Conocemos casi todos, menos el tipo **Factor**. Este aparece cuándo la columna tiene valores categóricos, es decir, que la columna toma uno de distintas posibles categorías. 
 
-#Crear una nueva columna con los porcentajes del total de jugadores
-naciones$percentage <- (naciones$count * 100)/totalPlayers
+Para poder ver los distintos valores de una columna, podemos utilizar `unique()` o `levels()`. 
 
-#piechart
-ggplot(naciones, aes(x="", y=percentage, fill=Nationality)) +
-  geom_bar(stat="identity",color="white") +
-  coord_polar("y", start=0) +
-   theme(legend.position="none") +
-     geom_text(aes(label = paste(Nationality, '', round(percentage, digits = 2), '%')), position = position_stack(vjust = 0.2)) +
-       scale_fill_brewer(type = "seq")
+```r
+getwd()
+setwd('../../Data')
 
+df.dataframe = read.csv('Metro_Interstate_Traffic_Volume.csv')
 
+str(df.dataframe)
 
+# Veamos los distintos niveles de la columna holiday
+unique(df.dataframe$holiday)
+levels(df.dataframe$holiday)
+```
+
+En este caso, los niveles de la columna factor no están ordenados. Quiere decir que no es capaz de distinguir cuál festividad ocurre primero. Para ordenar una columna podemos hacerlo manualmente de la siguiente manera.
+
+```r
+# Ordenar niveles
+niveles.orden <- c('Christmas Day','Columbus Day','Independence Day','Labor Day','Martin Luther King Jr Day',
+                       'Memorial Day','New Years Day','None','State Fair', 'Thanksgiving Day', 'Veterans Day',
+                       'Washingtons Birthday')
+
+# Agregamos columna con los niveles ordenados
+df.dataframe$holiday_orden <- factor(x = df.dataframe$holiday, levels = niveles.orden, ordered = TRUE)
+
+# Veamos que cambió en nuestro dataframe
+str(df.dataframe)
+
+unique(df.dataframe$holiday_orden)
 ```

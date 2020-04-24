@@ -1,4 +1,6 @@
 library(tidyverse)
+tidyverse_packages(include_self = TRUE)
+
 #Mejora la gráfica del dataset de iris.
 iris %>%
   ggplot(aes(Sepal.Length, Sepal.Width, color = Species, shape = Species)) +
@@ -18,3 +20,4 @@ iris %>%
   ylab('Petal Width') +
   facet_wrap(~Species, scales = 'free') +
   theme_bw()
+  
