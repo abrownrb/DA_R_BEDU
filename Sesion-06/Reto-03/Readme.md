@@ -1,16 +1,12 @@
 `Data Science` > [`Programacion con R`]
-## Series de tiempo
+## Visualizacion, graficos y tablas
 
 ### OBJETIVO
-- Transformar las fechas en serie de tiempo
-- Descomponer los factores de la serie de tiempo
-- Visualizar el grafico de tendencia descompuesta 
+- Mejorar la visualizacion
 
 #### REQUISITOS
 1. Contar con R studio.
-1. Usar la carpeta de trabajo `Sesion06/Reto-03`
+1. Usar la carpeta de trabajo `Sesion05/Reto-03`
 
 #### DESARROLLO
-* Crear una serie de tiempo con la funcion ts() para la variable milk_prod_per_cow_kg donde start = 1962, end = 1975 y periodicidad mensual (freq=12) 
-* Descomponemos la tendencia con la funcion stl() para la serie de tiempo que creamos y s.window="period" 
-* Visualiza la serie de tiempo y la serie de tiempo descompuesta 
+Con los dos primeros retos logramos hacer graficos de visualizacion muy utiles pero poco accionables ya que hay muchas colonias y se comportan de manera muy diferente. Para este reto, repetiremos la visualizacion del grafico de densidad (Reto 02) pero crearemos un "subset" llamado ecobici2 que solo incluira las colonias que tengan el campo estacion4 no vacio, es decir, aquellas Colonias que tengan estaciones con cuatro estaciones cercanas (hint: funcion subset). 
