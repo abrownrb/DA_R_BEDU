@@ -1,8 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
 `Data Science` > [`Programacion con R`]
 ## Ejercicios practicos (storytelling); Kaggle
 

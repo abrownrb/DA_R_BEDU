@@ -1,17 +1,28 @@
 `Data Science` > [`Programacion con R`]
 
-### OBJETIVO
-- Entender mejor los modelados y seguir viendo ejemplos.
+### OBJETIVO  
 
-#### REQUISITOS
-1. Contar con R studio
-1. Usar la carpeta de trabajo `Sesion-08/Postwork`
+- El objetivo de este postwork es utilizar diferentes paquetes para modificar y hacer más interactivas las visualizaciones creadas previamente.   
 
-#### DESARROLLO
 
-A continuacion pueden consultar esta pagina que sirve para ampliar los conceptos sobre modelaje de datos: 
-<https://rstudio-pubs-static.s3.amazonaws.com/237547_0171c04b6d2e4550aea58853c056d29d.html> 
+#### DESARROLLO  
 
+Existen múltiples librerías que puedes utilizar en R para que tus gráficas y visualizaciones sean mucho más interactivas. Instala las siguientes librerías para crear visualizaciones interactivas en la web que puedes  representar como apps.   
+
+**Plotly**  
+
+``` install.packages(plotly) ```      
+``` library(plotly) ```    
+
+**Shiny**
+
+``` install.packages(shiny) ```    
+``` library(shiny) ```    
+
+Si necesitas ayuda para utilizar estos paquetes recuerda que siempre puedes utilizar StackOverflow, pero también puedes revisar los siguientes recursos:
+
+<a href="https://www.r-bloggers.com/lang/spanish/2818" target="_blank">Shiny</a>  
+<a href="https://plot.ly/ggplot2/getting-started/" target="_blank">Plotly</a>  
 
 
 

@@ -12,5 +12,14 @@
 	- [Ejemplo 01](Ejemplo-01)
 	- [Reto 01](Reto-01)
 
-- Problemas planteados en Kaggle 
+- Estructurando un problema 
+	- [Ejemplo 02](Ejemplo-02)
+	- [Reto 02](Reto-02)
+
+- Estructurando un problema 
+	- [Ejemplo 03](Ejemplo-03)
+	- [Reto 03](Reto-03)
+
+### POSTWORK: Data Storytelling
+- Postwork
 	- [Postwork](Postwork)
